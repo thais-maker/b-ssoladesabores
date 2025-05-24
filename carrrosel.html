@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Bússola</title>
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 50%;
+            max-width: 10px;
+            margin: 0px auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .owl-carousel .item img {
+            border-radius: 5px;
+            box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Restaurante Bússola</h1>
+
+        <div class="owl-carousel owl-theme">
+            <div class="item"><img src="https://source.unsplash.com/800x500/?restaurant,food1" alt="Prato 1"></div>
+            <div class="item"><img src="https://source.unsplash.com/800x500/?restaurant,food2" alt="Prato 2"></div>
+            <div class="item"><img src="https://source.unsplash.com/800x500/?restaurant,food3" alt="Prato 3"></div>
+            <div class="item"><img src="https://source.unsplash.com/800x500/?restaurant,food4" alt="Prato 4"></div>
+        </div>
+    </div>
+
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 5,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+            nav: true,
+            dots: true,
+            responsive: {
+                0: { items: 1 },
+                600: { items: 1 },
+                1000: { items: 1 }
+            }
+        });
+    </script>
+
+</body>
+</html>
